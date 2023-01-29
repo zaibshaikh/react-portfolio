@@ -28,45 +28,49 @@ export default function Home() {
       </Head>
       <main className=" bg-blue-50 dark:bg-slate-900 transition duration-300 ease-in-out">
         <section>
-          <nav className="drop-shadow-sm py-3 px-3 mb-10 flex justify-between bg-blue-50 dark:bg-slate-900 transition duration-300 ease-in-out" >
-            <Image src="/logo.png" alt="Logo" width="160" height="14" />
+          <nav className="drop-shadow-sm dark:drop-shadow-md py-3 px-3 mb-10  bg-blue-50 dark:bg-slate-900 transition duration-300 ease-in-out " >
+            <div className="lg:max-w-screen-lg mx-auto flex justify-between">
+            <h1 className="font-archia font-bold uppercase text-slate-900 hover:text-blue-600 dark:text-slate-300 dark:hover:text-blue-600 transition duration-300 ease-in-out">Graphtech Designers</h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-blue-600 text-lg  hover:text-blue-900 transition duration-300 ease-in-out dark:text-slate-300" /> 
+                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-blue-600 text-lg  hover:text-blue-900 transition duration-300 ease-in-out dark:text-slate-300 dark:hover:text-blue-600" /> 
               </li>
-              <li><a className="text-sm font-archia ml-5 rounded-3xl bg-blue-200 text-blue-600 py-2 px-4 hover:bg-blue-300 transition duration-300 ease-in-out dark:text-slate-900 dark:bg-blue-300 dark:hover:bg-blue-600" href="#">Resume</a></li>
+              <li><a className="text-sm font-archia ml-5 rounded-3xl bg-blue-200 text-slate-900 py-2 px-4 hover:bg-blue-300 transition duration-300 ease-in-out dark:bg-blue-300 dark:hover:bg-blue-600" href="#">Resume</a></li>
             </ul>
-          </nav>
-          <div className="relative overflow-hidden rounded-full mx-auto w-60 h-60 mb-2">
-              <Image src={avatar} className="drop-shadow-lg rounded-full hover:scale-110 transition duration-300 ease-in-out" />
-          </div>
-          <div className="py-3 px-3 font-archia text-center">
-            <h2 className="text-xl text-blue-600 font-black">Makki Mohammed Zaib Shaikh</h2>
-            <h3 className="py-1 text-lg text-slate-900 dark:text-slate-300">Developer & Designer</h3>
-            <p className="py-2 text-lg leading-7 text-slate-900 dark:text-slate-300">Freelancer providing services for programming and design content needs. Contact me and let's get cracking!</p>
-          </div>
-          <div className="flex justify-center gap-5">
-            <ul className="text-4xl text-slate-400 hover:text-slate-800 transition duration-300 ease-in-out"><a href="https://www.behance.net/mohammedzaibshaikh" target="_blank" alt="Behance"><AiFillBehanceCircle /></a></ul>
-            <ul className="text-4xl text-slate-400 hover:text-slate-900 transition duration-300 ease-in-out"><a href="https://www.linkedin.com/in/mohammedzaibshaikh/" target="_blank" alt="LinkedIn"><AiFillLinkedin /></a></ul>
-            <ul className="text-4xl text-slate-400 hover:text-slate-900 transition duration-300 ease-in-out"><a href="https://www.instagram.com/zaibshaikh_exe" target="_blank" alt="Instagram"><AiFillInstagram /></a></ul>
-            <ul className="text-4xl text-slate-400 hover:text-slate-900 transition duration-300 ease-in-out"><a href="https://github.com/zaibshaikh" target="_blank" alt="Github"><AiFillGithub /></a></ul>
-            <ul className="text-4xl text-slate-400 hover:text-slate-900 transition duration-300 ease-in-out"><a href="https://www.youtube.com/@makkimohammedzaibshaikh7688" target="_blank" alt="YouTube"><AiFillYoutube /></a></ul>
-            <ul className="text-4xl text-slate-400 hover:text-slate-900 transition duration-300 ease-in-out"><a href="mailto:szaib.shaikh@gmail.com" target="_blank" alt="Email"><SiGmail /></a></ul>
             </div>
+          </nav>
+          <div className="lg:flex lg:flex-row lg:items-center lg:mt-20 lg:max-w-screen-lg mx-auto">  
+          <div className="relative overflow-hidden rounded-full mx-auto w-60 h-60 mb-2">
+              <Image src={avatar} className="drop-shadow-xl rounded-full hover:scale-110 transition duration-300 ease-in-out" />
+          </div>
+          <div className="py-3 px-3 font-archia text-center lg:max-w-screen-lg mx-auto lg:text-left">
+            <h2 className="text-xl text-blue-600 font-black">Makki Mohammed Zaib Shaikh</h2>
+            <h3 className="py-1 text-lg text-slate-900 dark:text-slate-300 transition duration-300 ease-in-out">Developer & Designer</h3>
+            <p className="py-2 text-lg leading-7 text-slate-900 dark:text-slate-300 transition duration-300 ease-in-out lg:max-w-screen-sm mx-auto">Freelancer providing services for programming and design content needs. Contact me and let's get cracking!</p>
+          <div className="flex justify-center gap-5 lg:max-w-screen-lg mx-auto lg:justify-start">
+            <ul className="text-4xl text-slate-400 hover:text-slate-800 dark:hover:text-blue-600 transition duration-300 ease-in-out"><a href="https://www.behance.net/mohammedzaibshaikh" target="_blank" alt="Behance"><AiFillBehanceCircle /></a></ul>
+            <ul className="text-4xl text-slate-400 hover:text-slate-900 dark:hover:text-blue-600 transition duration-300 ease-in-out"><a href="https://www.linkedin.com/in/mohammedzaibshaikh/" target="_blank" alt="LinkedIn"><AiFillLinkedin /></a></ul>
+            <ul className="text-4xl text-slate-400 hover:text-slate-900 dark:hover:text-blue-600 transition duration-300 ease-in-out"><a href="https://www.instagram.com/zaibshaikh_exe" target="_blank" alt="Instagram"><AiFillInstagram /></a></ul>
+            <ul className="text-4xl text-slate-400 hover:text-slate-900 dark:hover:text-blue-600 transition duration-300 ease-in-out"><a href="https://github.com/zaibshaikh" target="_blank" alt="Github"><AiFillGithub /></a></ul>
+            <ul className="text-4xl text-slate-400 hover:text-slate-900 dark:hover:text-blue-600 transition duration-300 ease-in-out"><a href="https://www.youtube.com/@makkimohammedzaibshaikh7688" target="_blank" alt="YouTube"><AiFillYoutube /></a></ul>
+            <ul className="text-4xl text-slate-400 hover:text-slate-900 dark:hover:text-blue-600 transition duration-300 ease-in-out"><a href="mailto:szaib.shaikh@gmail.com" target="_blank" alt="Email"><SiGmail /></a></ul>
+            </div>
+          </div>
+          </div>
         </section>
 
         <section>
-          <div className="py-6 text-center font-archia px-3">
-            <h3 className="text-xl pt-6 text-blue-600 font-black">Services I offer</h3>
+          <div className="py-3 text-center font-archia px-3 lg:max-w-screen-lg mx-auto">
+            <h3 className="text-xl pt-6 text-blue-600 font-black md:mt-10">Services I offer</h3>
             <p className="py-2 text-lg leading-7 text-slate-900 dark:text-slate-300 transition duration-300 ease-in-out">Since the beginning of my journey as a freelancer designer & developer, I've done remote work for <span className="text-blue-600">agencies</span> consulted for <span className="text-blue-600">startups</span> and collaborated with talented people to create digital products for both business and consumer use.</p>
           </div>
         </section>
 
-        <div className="text-slate-900 px-3">
-          <div className="bg-white dark:bg-slate-700 dark:text-slate-300 transition duration-300 ease-in-out font-archia text-center rounded-lg drop-shadow-sm m-5 py-5 px-5">
+        <div className="text-slate-900 lg:max-w-screen-lg flex flex-col px-3 md:flex-row lg:flex lg:flex-row gap-5 mx-auto">
+          <div className="bg-white dark:bg-slate-800 dark:text-slate-300 transition duration-300 ease-in-out font-archia text-center rounded-lg lg:w-1/3 md:w-1/3 drop-shadow-sm dark:drop-shadow-md py-5 px-5">
             <span className="flex items-center justify-center">
-            <Image src={design} width="60"/>
-            <h1 className="ml-5 font-bold text-xl text-blue-600">Beautiful Designs</h1>
+            <Image src={design} className="rotate-0 hover:-rotate-12 transition duration-300 ease-in-out" width="60"/>
+            <h1 className="ml-5 font-semibold text-md text-blue-600">Beautiful Designs</h1>
             </span>
             <p className="py-4 leading-7">Creating elegant designs suited for your needs design needs.</p>
             <h4 className="text-left text-md font-semibold">Design tools I used:</h4>
@@ -78,10 +82,10 @@ export default function Home() {
             <p>- Figma</p>
             </div>
           </div>
-          <div className="bg-white dark:bg-slate-700 dark:text-slate-300 transition duration-300 ease-in-out font-archia text-center rounded-lg drop-shadow-sm m-5 py-5 px-5">
+          <div className="bg-white dark:bg-slate-800 dark:text-slate-300 transition duration-300 ease-in-out font-archia text-center rounded-lg lg:w-1/3 md:w-1/3 drop-shadow-sm py-3 px-5">
             <span className="flex items-center justify-center">
-            <Image src={code} width="60"/>
-            <h1 className="ml-5 font-bold text-xl text-blue-600">Elegant Codes</h1>
+            <Image src={code} className="rotate-0 hover:-rotate-12 transition duration-300 ease-in-out" width="60"/>
+            <h1 className="ml-5 font-semibold text-md text-blue-600">Elegant Codes</h1>
             </span>
             <p className="py-4 leading-7">Need a website that loads faster than your buttered toast from your toaster? We have got you covered.</p>
             <h4 className="text-left text-md font-semibold">Design tools I used:</h4>
@@ -93,10 +97,10 @@ export default function Home() {
             <p>- PHP</p>
             </div>
           </div>
-          <div className="bg-white dark:bg-slate-700 dark:text-slate-300 transition duration-300 ease-in-out font-archia text-center rounded-lg drop-shadow-sm m-5 py-5 px-5">
+          <div className="bg-white dark:bg-slate-800 dark:text-slate-300 transition duration-300 ease-in-out font-archia text-center rounded-lg lg:w-1/3 md:w-1/3 drop-shadow-sm py-5 px-5">
             <span className="flex items-center justify-center">
-            <Image src={consulting} width="60"/>
-            <h1 className="ml-5 font-bold text-xl text-blue-600">Marvelous SEO</h1>
+            <Image src={consulting} className="rotate-0 hover:-rotate-12 transition duration-300 ease-in-out" width="60"/>
+            <h1 className="ml-5 font-semibold text-md text-blue-600">Marvelous SEO</h1>
             </span>
             <p className="py-4 leading-7">Get yourself ranked up in the guaranteed time, No hassle!</p>
             <h4 className="text-left text-md font-semibold">Design tools I used:</h4>
@@ -107,20 +111,24 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="font-archia">
-          <h2 className="text-xl pt-10 text-blue-600 font-black text-center">Portfolio</h2>
-          <p className="py-2 px-3 text-lg text-center leading-7 text-slate-900 dark:text-slate-300">I have been working as a developer and designer for past 6 years. I offer wide range of services, including Rebranding / Brand design, Video Editing & Programming.Here are some of my work!</p>
+        <div className="font-archia px-3 lg:max-w-screen-lg mx-auto">
+          <h2 className="text-xl pt-10 text-blue-600 font-black text-center lg:mt-20 md:mt-10">Portfolio</h2>
+          <p className="py-2 text-lg text-center leading-7 text-slate-900 dark:text-slate-300 transition duration-300 ease-in-out">I have been working as a developer and designer for past 6 years. I offer wide range of services, including Rebranding / Brand design, Video Editing & Programming.Here are some of my work!</p>
         </div>
-        <div className="px-3 pt-5 flex flex-col gap-10 rounded-md overflow-hidden">
-          <div className="basis-1/3 flex-1"><Image src={web1} className="rounded-lg object-cover" width={'100%'} height={'100%'} /></div>
-          <div className="basis-1/3 flex-1"><Image src={web2} className="rounded-lg object-cover" width={'100%'} height={'100%'} /></div>
-          <div className="basis-1/3 flex-1"><Image src={web3} className="rounded-lg object-cover" width={'100%'} height={'100%'} /></div>
-          <div className="basis-1/3 flex-1"><Image src={web4} className="rounded-lg object-cover" width={'100%'} height={'100%'} /></div>
-          <div className="basis-1/3 flex-1"><Image src={web5} className="rounded-lg object-cover" width={'100%'} height={'100%'} /></div>
-          <div className="basis-1/3 flex-1"><Image src={web6} className="rounded-lg object-cover" width={'100%'} height={'100%'} /></div>
+        <div className="px-3 pt-5 flex flex-col md:flex-row sd:flex-col gap-5 overflow-hidden lg:max-w-screen-lg mx-auto">
+          <div className="flex flex-col gap-5">
+          <div className="basis-1/3 flex 1 overflow-hidden rounded-lg"><Image src={web1} className="rounded-lg object-cover hover:scale-110 transition duration-300 ease-in-out" width={'100%'} height={'100%'} /></div>
+          <div className="basis-1/3 flex 1 overflow-hidden rounded-lg"><Image src={web2} className="rounded-lg object-cover hover:scale-110 transition duration-300 ease-in-out" width={'100%'} height={'100%'} /></div>
+          <div className="basis-1/3 flex 1 overflow-hidden rounded-lg"><Image src={web3} className="rounded-lg object-cover hover:scale-110 transition duration-300 ease-in-out" width={'100%'} height={'100%'} /></div>
+          </div>
+          <div className="flex flex-col gap-5">
+          <div className="basis-1/3 flex 1 overflow-hidden rounded-lg"><Image src={web4} className="rounded-lg object-cover hover:scale-110 transition duration-300 ease-in-out" width={'100%'} height={'100%'} /></div>
+          <div className="basis-1/3 flex 1 overflow-hidden rounded-lg"><Image src={web5} className="rounded-lg object-cover hover:scale-110 transition duration-300 ease-in-out" width={'100%'} height={'100%'} /></div>
+          <div className="basis-1/3 flex 1 overflow-hidden rounded-lg"><Image src={web6} className="rounded-lg object-cover hover:scale-110 transition duration-300 ease-in-out" width={'100%'} height={'100%'} /></div>
+          </div>
         </div>
-        <div className="text-center font-archia py-10 text-slate-900 text-md dark:text-slate-300">
-          <p>2023 Graphtech Designers. All rights are reserved.</p>
+        <div className="text-right font-archia mt-10 py-5 text-slate-900 text-md dark:text-slate-300 mx-auto">
+          <p className="lg:max-w-screen-lg mx-auto">2023 Graphtech Designers. All rights are reserved.</p>
         </div>
       </main>
     </div>
