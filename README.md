@@ -17,4 +17,6 @@ All the images are placed in 'public' folder.
 
 You can clone and start using this project, it is available for free use and can be modified as per ones liking!
 
+Check it out, its live at: https://react-portfolio-rho-rosy.vercel.app/
+
 TY :)
